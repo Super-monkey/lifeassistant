@@ -8,13 +8,11 @@ import com.supermonkey.lifeassistant.capabilities.cache.FileUtil;
 import java.io.File;
 
 /**
- * <管理本地文件目录>
+ * @author supermonkey
+ * @version 1.0
+ * @date 创建时间：2017/4/20
+ * @Description <管理本地文件目录>
  * 对本地存储路径做管理，本地存储分为外部存储（SD卡）和内部存储，项目以外部存储优先，如果没有外部存储，则使用内部存储\
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
  */
 public class LocalFileStorageManager implements BridgeLifeCycleListener {
     private static String FILE_ROOT_NAME = "Electronicbrand";
@@ -84,7 +82,6 @@ public class LocalFileStorageManager implements BridgeLifeCycleListener {
     public static String getUserHeadPath(Context context, String userId) {
         return FileUtil.createNewFile(getCacheFilePath(context) + FOLDER_NAME_IMAGE + File.separator + userId + File.separator);
     }
-
 
     /**
      * <版本更新目录>

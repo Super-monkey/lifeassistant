@@ -1,13 +1,11 @@
 package com.supermonkey.lifeassistant.constant;
 
 /**
- * <网络请求url地址>
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <网络请求url地址>
  * <功能详细描述>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
  */
 public class URLUtil {
 

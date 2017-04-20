@@ -6,14 +6,11 @@ import android.widget.Toast;
 import com.supermonkey.lifeassistant.EBApplication;
 import com.supermonkey.lifeassistant.constant.Constants;
 
-
 /**
- * <提示公共类>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <提示公共类>
  */
 public final class ToastUtil {
     private static Toast toast;

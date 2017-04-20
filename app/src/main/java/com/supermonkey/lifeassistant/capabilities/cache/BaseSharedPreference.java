@@ -4,12 +4,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * <sharepref基础存储功能模块>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <sharepref基础存储功能模块>
  */
 public class BaseSharedPreference {
     private String fileName;

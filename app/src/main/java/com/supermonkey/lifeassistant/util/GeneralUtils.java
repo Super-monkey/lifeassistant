@@ -24,12 +24,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * <通用工具类>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <通用工具类>
  */
 public final class GeneralUtils {
 

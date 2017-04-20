@@ -1,4 +1,4 @@
-package com.supermonkey.lifeassistant.ui.personcenter;
+package com.supermonkey.lifeassistant.ui.home;
 
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +33,7 @@ public class LoginActivity extends BaseActivity implements IUserLoginView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         super.onCreate(savedInstanceState);
 
         mUserLoginPresenter = new LoginPresenter();

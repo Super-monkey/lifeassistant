@@ -1,12 +1,10 @@
 package com.supermonkey.lifeassistant.ui.base;
 
 /**
- * <公共方法抽象>
- *
- * @author caoyinfei
- * @version [版本号, 2014-3-24]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <公共方法抽象>
  */
 public interface CreateInit {
     /**

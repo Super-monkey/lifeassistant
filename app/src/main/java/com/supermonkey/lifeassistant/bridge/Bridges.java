@@ -2,12 +2,10 @@
 package com.supermonkey.lifeassistant.bridge;
 
 /**
- * <与Bridge模块一一对应，用以在BridgeFactory获取某个Bridge对应的Key>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 创建时间：2017/4/20
+ * @Description <与Bridge模块一一对应，用以在BridgeFactory获取某个Bridge对应的Key>
  */
 public class Bridges {
     /**

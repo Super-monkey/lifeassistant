@@ -3,12 +3,10 @@ package com.supermonkey.lifeassistant.bean.home;
 import com.supermonkey.lifeassistant.bean.base.BaseResp;
 
 /**
- * <功能详细描述>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [产品/模块版本]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <功能详细描述>
  */
 public class LoginResp extends BaseResp {
     private String userId;

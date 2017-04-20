@@ -1,12 +1,10 @@
 package com.supermonkey.lifeassistant.bean.base;
 
 /**
- * <网络请求返回体>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <网络请求返回体>
  */
 public class BaseResp
 {

@@ -4,14 +4,11 @@ import android.content.Context;
 
 import com.supermonkey.lifeassistant.capabilities.cache.BaseSharedPreference;
 
-
 /**
- * <用户信息缓存>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [产品/模块版本]
+ * @author supermonkey
+ * @version 1.0
+ * @date 创建时间：2017/4/20
+ * @Description <用户信息缓存>
  */
 public class EBSharedPrefUser extends BaseSharedPreference {
     /**
@@ -20,6 +17,6 @@ public class EBSharedPrefUser extends BaseSharedPreference {
     public static final String USER_NAME = "user_name";
 
     public EBSharedPrefUser(Context context, String fileName) {
-        super(context,fileName);
+        super(context, fileName);
     }
 }

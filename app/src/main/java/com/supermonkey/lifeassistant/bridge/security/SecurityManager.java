@@ -5,14 +5,11 @@ import android.content.Context;
 import com.supermonkey.lifeassistant.bridge.BridgeLifeCycleListener;
 import com.supermonkey.lifeassistant.capabilities.security.SecurityUtils;
 
-
 /**
- * <加解密管理类>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/12]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 创建时间：2017/4/20
+ * @Description <加解密管理类>
  */
 public class SecurityManager  implements BridgeLifeCycleListener {
     @Override

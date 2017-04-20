@@ -5,14 +5,11 @@ import android.view.View;
 
 import com.supermonkey.lifeassistant.util.ToastUtil;
 
-
 /**
- * <页面基础公共功能实现>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <页面基础公共功能实现>
  */
 public class PresentationLayerFuncHelper implements PresentationLayerFunc {
 

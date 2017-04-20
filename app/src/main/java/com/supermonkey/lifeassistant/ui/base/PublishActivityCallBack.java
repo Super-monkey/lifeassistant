@@ -3,12 +3,10 @@ package com.supermonkey.lifeassistant.ui.base;
 import android.os.Bundle;
 
 /**
- * <页面跳转封装>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <页面跳转封装>
  */
 public interface PublishActivityCallBack {
     /**

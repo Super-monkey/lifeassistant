@@ -10,12 +10,10 @@ import com.supermonkey.lifeassistant.capabilities.http.Param;
 import java.io.File;
 
 /**
- * <http公共解析库>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 创建时间：2017/4/20
+ * @Description <http公共解析库>
  */
 public class OkHttpManager implements BridgeLifeCycleListener {
 

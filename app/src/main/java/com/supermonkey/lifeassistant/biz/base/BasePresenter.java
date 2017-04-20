@@ -1,12 +1,10 @@
 package com.supermonkey.lifeassistant.biz.base;
 
 /**
- * <基础业务类>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <基础业务类>
  */
 public abstract class BasePresenter<V extends IMvpView> implements Presenter<V> {
     protected V mvpView;

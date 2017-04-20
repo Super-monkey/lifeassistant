@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/round_corner_item_single_bg_pressed" android:state_focused="true"></item>
+    <item android:drawable="@drawable/custom_view_gridlayout_item_bg_s" android:state_pressed="true"></item>-->
+    <item android:state_pressed="true" android:drawable="@color/gridlayout_item_bg_pressed" />
+    <item android:drawable="@color/gridlayout_item_bg_normal" />
+    <item>
+        <shape>
+            <solid android:color="#303030" />
+        </shape>
+    </item>
+
+</selector>

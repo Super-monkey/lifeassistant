@@ -3,12 +3,12 @@ package com.supermonkey.lifeassistant.util;
 import android.app.Activity;
 import android.content.Context;
 import android.util.DisplayMetrics;
+
 /**
- * <像素转换>
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <像素转换>
  */
 public class DensityUtil
 {

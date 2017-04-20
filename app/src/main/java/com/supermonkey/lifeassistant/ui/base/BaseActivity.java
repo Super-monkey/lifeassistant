@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.LinearLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.supermonkey.lifeassistant.EBApplication;
@@ -21,12 +21,10 @@ import de.greenrobot.event.EventBus;
 
 
 /**
- * <基础activity>
- *
- * @author caoyinfei
- * @version [版本号, 2014-3-24]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 创建时间：2017/4/20
+ * @Description <基础activity>
  */
 public abstract class BaseActivity extends Activity implements CreateInit, PublishActivityCallBack, PresentationLayerFunc, IMvpView, OnClickListener {
 
@@ -35,12 +33,20 @@ public abstract class BaseActivity extends Activity implements CreateInit, Publi
     /**
      * 返回按钮
      */
-    private LinearLayout back;
+    //private LinearLayout back;
 
     /**
      * 标题，右边字符
      */
-    protected TextView title, right;
+    protected TextView title;
+    /**
+     * 菜单按钮
+     */
+    protected ImageButton menu;
+    /**
+     * 设置按钮
+     */
+    protected ImageButton setting;
 
     public BasePresenter presenter;
 
@@ -51,29 +57,24 @@ public abstract class BaseActivity extends Activity implements CreateInit, Publi
         super.onCreate(savedInstanceState);
         presentationLayerFuncHelper = new PresentationLayerFuncHelper(this);
 
+        setHeader();
+        initData();
         initViews();
         initListeners();
-        initData();
-        setHeader();
         EBApplication.ebApplication.addActivity(this);
         EventBus.getDefault().register(this);
     }
 
     @Override
     public void setHeader() {
-        back = (LinearLayout) findViewById(R.id.ll_back);
-        title = (TextView) findViewById(R.id.tv_title);
-        right = (TextView) findViewById(R.id.tv_right);
-        back.setOnClickListener(this);
+        //back = (LinearLayout) findViewById(R.id.ll_back);
+        title = (TextView) findViewById(R.id.top_bar_title);
+        menu = (ImageButton) findViewById(R.id.m_toggle);
+        setting = (ImageButton) findViewById(R.id.m_setting);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.ll_back:
-                finish();
-                break;
-        }
     }
 
     public void onEventMainThread(Event event) {
@@ -147,5 +148,4 @@ public abstract class BaseActivity extends Activity implements CreateInit, Publi
         httpManager.cancelActivityRequest(TAG);
         super.onDestroy();
     }
-
 }

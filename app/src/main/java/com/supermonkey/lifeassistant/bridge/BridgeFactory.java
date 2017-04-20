@@ -10,14 +10,11 @@ import com.supermonkey.lifeassistant.bridge.http.OkHttpManager;
 
 import java.util.HashMap;
 
-
 /**
- * <中间连接层>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/6]
- * @see [相关类/方法]
- * @since [V1]
+ * @author supermonkey
+ * @version 1.0
+ * @date 创建时间：2017/4/20
+ * @Description <中间连接层>
  */
 public class BridgeFactory {
 

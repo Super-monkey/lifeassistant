@@ -8,12 +8,10 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * <加解密实现类>
- *
- * @author caoyinfei
- * @version [版本号, 2016/6/12]
- * @see [相关类/方法]
- * @since [产品/模块版本]
+ * @author supermonkey
+ * @version 1.0
+ * @date 2017/4/20
+ * @Description <加解密实现类>
  */
 public class SecurityUtils {
     /**

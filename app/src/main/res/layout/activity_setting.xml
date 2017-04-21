@@ -35,7 +35,7 @@
                     android:text="仅在Wifi下使用" />
 
 
-                <com.supermonkey.lifeassistant.view.SwitchButton
+                <com.supermonkey.lifeassistant.view.switchbutton.SwitchButton
                     android:id="@+id/wifi_switch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 
 import com.supermonkey.lifeassistant.R;
 import com.supermonkey.lifeassistant.ui.base.BaseActivity;
-import com.supermonkey.lifeassistant.view.SwitchButton;
+import com.supermonkey.lifeassistant.view.switchbutton.SwitchButton;
 
 /**
  * @author supermonkey

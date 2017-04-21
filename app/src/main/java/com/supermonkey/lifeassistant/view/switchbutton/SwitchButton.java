@@ -1,4 +1,4 @@
-package com.supermonkey.lifeassistant.view;
+package com.supermonkey.lifeassistant.view.switchbutton;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;

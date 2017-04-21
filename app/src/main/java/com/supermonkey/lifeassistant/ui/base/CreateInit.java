@@ -22,6 +22,7 @@ public interface CreateInit {
      */
     public void initData();
 
+
     /**
      * 初始化公共头部
      */

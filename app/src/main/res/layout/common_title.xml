@@ -40,4 +40,6 @@
             android:contentDescription="@null" />
     </RelativeLayout>
 
+    <include layout="@layout/common_title_shadow" />
+
 </LinearLayout>

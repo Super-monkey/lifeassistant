@@ -32,7 +32,7 @@ public class MyGridLayout extends ViewGroup {
             TypedArray a = getContext().obtainStyledAttributes(attrs,
                     R.styleable.MyGridLayout);
             colums = a.getInteger(R.styleable.MyGridLayout_numColumns, 2);
-            margin = (int) a.getInteger(R.styleable.MyGridLayout_itemMargin, 2);
+            margin = a.getInteger(R.styleable.MyGridLayout_itemMargin, 2);
         }
     }
 

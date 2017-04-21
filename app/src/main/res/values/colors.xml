@@ -12,12 +12,16 @@
     <color name="translucent">#00000000</color>
     <color name="gray">#eeeeee</color>
     <color name="gain_code">#ff9933</color>
-    <!--标题栏-->
+    <!--common title-->
     <color name="list_bg_color">#ffeeeade</color>
     <color name="dark_brown">#ff4e0a13</color>
-    <!--格子布局-->
+    <!--home-->
     <color name="gridlayout_item_bg_normal">#EEECE5</color>
     <color name="gridlayout_item_bg_pressed">#F7F5EE</color>
     <color name="gridlayout_bg">#D7D7D7</color>
     <color name="dark_gray">#ff636363</color>
+    <!--setting-->
+    <color name="settings_entry">#ff59493f</color>
+    <color name="settings_attribute">#ff4d0c14</color>
+    <color name="settings_item_quit">#EE6363</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.supermonkey.lifeassistant.bean.home;
+package com.supermonkey.lifeassistant.bean.login;
 
 import com.supermonkey.lifeassistant.bean.base.BaseResp;
 

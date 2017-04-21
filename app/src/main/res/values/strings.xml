@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LifeAssistant</string>
+    <!--setting-->
+    <string name="setting_clear_cache">清除缓存</string>
 </resources>

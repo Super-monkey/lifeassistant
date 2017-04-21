@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageButton;
-import android.widget.TextView;
 
 import com.supermonkey.lifeassistant.EBApplication;
-import com.supermonkey.lifeassistant.R;
 import com.supermonkey.lifeassistant.biz.base.BasePresenter;
 import com.supermonkey.lifeassistant.biz.base.IMvpView;
 import com.supermonkey.lifeassistant.bridge.BridgeFactory;
@@ -30,24 +27,6 @@ public abstract class BaseActivity extends Activity implements CreateInit, Publi
 
     private PresentationLayerFuncHelper presentationLayerFuncHelper;
 
-    /**
-     * 返回按钮
-     */
-    //private LinearLayout back;
-
-    /**
-     * 标题，右边字符
-     */
-    protected TextView title;
-    /**
-     * 菜单按钮
-     */
-    protected ImageButton menu;
-    /**
-     * 设置按钮
-     */
-    protected ImageButton setting;
-
     public BasePresenter presenter;
 
     public final String TAG = this.getClass().getSimpleName();
@@ -65,20 +44,7 @@ public abstract class BaseActivity extends Activity implements CreateInit, Publi
         EventBus.getDefault().register(this);
     }
 
-    @Override
-    public void setHeader() {
-        //back = (LinearLayout) findViewById(R.id.ll_back);
-        title = (TextView) findViewById(R.id.top_bar_title);
-        menu = (ImageButton) findViewById(R.id.m_toggle);
-        setting = (ImageButton) findViewById(R.id.m_setting);
-    }
-
-    @Override
-    public void onClick(View v) {
-    }
-
     public void onEventMainThread(Event event) {
-
     }
 
     @Override

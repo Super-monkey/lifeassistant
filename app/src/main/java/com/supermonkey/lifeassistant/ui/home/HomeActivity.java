@@ -8,11 +8,13 @@ import com.supermonkey.lifeassistant.R;
 import com.supermonkey.lifeassistant.constant.Event;
 import com.supermonkey.lifeassistant.ui.base.BaseActivity;
 import com.supermonkey.lifeassistant.view.MyGridLayout;
+import com.supermonkey.lifeassistant.view.TitleBar;
 
 
 public class HomeActivity extends BaseActivity {
 
     private MyGridLayout gridLayout;
+    private TitleBar titleBar;
 
     private int[] srcs;
     private String[] titles;
@@ -25,6 +27,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void initViews() {
+        titleBar = (TitleBar) findViewById(R.id.home_title_bar);
         gridLayout = (MyGridLayout) findViewById(R.id.act_home_gridlayout);
         gridLayout.setGridAdapter(new GridLayoutAdapter(this, srcs, titles));
     }
@@ -62,15 +65,9 @@ public class HomeActivity extends BaseActivity {
         super.onEventMainThread(event);
     }
 
-    @Override
-    public void onClick(View v) {
-        super.onClick(v);
-    }
 
     @Override
     public void setHeader() {
-        super.setHeader();
-        title.setText("主页");
     }
 
     @Override
@@ -87,5 +84,10 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void hideLoading() {
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

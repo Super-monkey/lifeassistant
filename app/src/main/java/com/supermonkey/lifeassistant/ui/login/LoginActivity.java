@@ -1,4 +1,4 @@
-package com.supermonkey.lifeassistant.ui.home;
+package com.supermonkey.lifeassistant.ui.login;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +10,7 @@ import com.supermonkey.lifeassistant.biz.base.personcenter.LoginPresenter;
 import com.supermonkey.lifeassistant.biz.personcenter.IUserLoginView;
 import com.supermonkey.lifeassistant.constant.Event;
 import com.supermonkey.lifeassistant.ui.base.BaseActivity;
+import com.supermonkey.lifeassistant.ui.home.HomeActivity;
 
 
 public class LoginActivity extends BaseActivity implements IUserLoginView {
@@ -59,8 +60,6 @@ public class LoginActivity extends BaseActivity implements IUserLoginView {
 
     @Override
     public void setHeader() {
-        super.setHeader();
-        title.setText("登录");
     }
 
     @Override
@@ -81,7 +80,6 @@ public class LoginActivity extends BaseActivity implements IUserLoginView {
                 mUserLoginPresenter.login(userName.getText().toString(), password.getText().toString());
                 break;
         }
-        super.onClick(v);
     }
 
     @Override

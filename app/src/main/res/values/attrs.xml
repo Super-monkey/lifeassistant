@@ -5,7 +5,7 @@
     <declare-styleable name="TitleBar">
         <attr name="top_title" format="reference|string" />
     </declare-styleable>
-    <!--格子布局-->
+    <!--gridlayout-->
     <declare-styleable name="MyGridLayout">
         <attr name="numColumns" format="integer" />
         <attr name="itemMargin" format="integer" />
@@ -32,5 +32,19 @@
         <attr name="sb_show_indicator" format="reference|boolean" />
         <attr name="sb_background" format="reference|color" />
         <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+    <!--PagerSlidingTabStrip-->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
     </declare-styleable>
 </resources>

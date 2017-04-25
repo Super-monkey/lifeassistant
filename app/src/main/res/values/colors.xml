@@ -24,4 +24,6 @@
     <color name="settings_entry">#ff59493f</color>
     <color name="settings_attribute">#ff4d0c14</color>
     <color name="settings_item_quit">#EE6363</color>
+    <!--PagerSlidingTabStrip-->
+    <color name="pager_background_tab_pressed">#6633B5E5</color>
 </resources>

@@ -9,15 +9,21 @@ import com.supermonkey.lifeassistant.constant.Event;
 import com.supermonkey.lifeassistant.ui.base.BaseActivity;
 import com.supermonkey.lifeassistant.view.MyGridLayout;
 import com.supermonkey.lifeassistant.view.TitleBar;
+import com.youth.banner.Banner;
+
+import java.util.List;
 
 
 public class HomeActivity extends BaseActivity {
 
+    private Banner banner;
     private MyGridLayout gridLayout;
     private TitleBar titleBar;
 
     private int[] srcs;
     private String[] titles;
+
+    private List<String> images;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +32,27 @@ public class HomeActivity extends BaseActivity {
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        //开始轮播
+        banner.startAutoPlay();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        //结束轮播
+        banner.stopAutoPlay();
+    }
+
+    @Override
     public void initViews() {
+        banner = (Banner) findViewById(R.id.banner);
         titleBar = (TitleBar) findViewById(R.id.home_title_bar);
         gridLayout = (MyGridLayout) findViewById(R.id.act_home_gridlayout);
         gridLayout.setGridAdapter(new GridLayoutAdapter(this, srcs, titles));
+
+        banner.setImages(images).setImageLoader(new GlideImageLoader()).start();
     }
 
     @Override
@@ -68,6 +91,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void setHeader() {
+        titleBar.setTitle("主页");
     }
 
     @Override

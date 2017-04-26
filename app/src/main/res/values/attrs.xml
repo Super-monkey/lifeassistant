@@ -35,16 +35,32 @@
     </declare-styleable>
     <!--PagerSlidingTabStrip-->
     <declare-styleable name="PagerSlidingTabStrip">
+        <!-- 指示器颜色 -->
         <attr name="pstsIndicatorColor" format="color" />
+        <!-- 底部/顶部线颜色 -->
         <attr name="pstsUnderlineColor" format="color" />
+        <!-- 分割线颜色 -->
         <attr name="pstsDividerColor" format="color" />
+        <!-- 指示器高度 -->
         <attr name="pstsIndicatorHeight" format="dimension" />
+        <!-- 底部/顶部线高度 -->
         <attr name="pstsUnderlineHeight" format="dimension" />
+        <!-- 短分割线内边距 -->
         <attr name="pstsDividerPadding" format="dimension" />
+        <!-- 控件距左和右边距 -->
         <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <!-- 滚动偏移量 -->
         <attr name="pstsScrollOffset" format="dimension" />
+        <!-- 控件的背景 -->
         <attr name="pstsTabBackground" format="reference" />
+        <!-- 是否自动填充屏幕 -->
         <attr name="pstsShouldExpand" format="boolean" />
+        <!-- Text全部大写 -->
         <attr name="pstsTextAllCaps" format="boolean" />
+        <!-- Indicator和Underline布局在控件的上面或者下面 -->
+        <attr name="pstsControlStyle">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
     </declare-styleable>
 </resources>

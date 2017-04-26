@@ -12,6 +12,11 @@
         android:layout_height="wrap_content"
         app:top_title="主页" />
 
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
     <com.supermonkey.lifeassistant.view.MyGridLayout
         android:id="@+id/act_home_gridlayout"
         android:layout_width="match_parent"

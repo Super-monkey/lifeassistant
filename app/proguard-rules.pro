@@ -34,7 +34,7 @@
 #混淆时是否记录日志
 -verbose
 
-# 混淆时所采用的算法
+#混淆时所采用的算法
 -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 
 #保护注解

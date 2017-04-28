@@ -57,6 +57,8 @@
         <attr name="pstsShouldExpand" format="boolean" />
         <!-- Text全部大写 -->
         <attr name="pstsTextAllCaps" format="boolean" />
+        <!-- 选中字体的颜色 -->
+        <attr name="pstSelectedTextColor" format="color" />
         <!-- Indicator和Underline布局在控件的上面或者下面 -->
         <attr name="pstsControlStyle">
             <enum name="top" value="0" />

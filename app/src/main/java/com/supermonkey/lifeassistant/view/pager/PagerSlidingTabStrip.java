@@ -92,6 +92,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
     // 显示tab的编号
     private int currentPosition = 0;
+    // 选中tab的编号
+    private int selectedPosition = 0;
     // 当前位置的偏移量
     private float currentPositionOffset = 0f;
 
@@ -129,10 +131,12 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     private int tabTextSize = 12;
     // tab文字颜色
     private int tabTextColor = 0xFF666666;
+    // 被选中文字颜色
+    private int selectedTabTextColor = 0xFF666666;
     // 默认外观样式
     private Typeface tabTypeface = null;
     // 字体
-    private int tabTypefaceStyle = Typeface.BOLD;
+    private int tabTypefaceStyle = Typeface.NORMAL;
 
     // tab对于父控件左上角的偏移量
     private int lastScrollX = 0;
@@ -207,6 +211,10 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         underlineColor = a.getColor(R.styleable.PagerSlidingTabStrip_pstsUnderlineColor, underlineColor);
         // 分割线的颜色
         dividerColor = a.getColor(R.styleable.PagerSlidingTabStrip_pstsDividerColor, dividerColor);
+        // 选中字体的颜色
+        selectedTabTextColor = a.getColor(
+                R.styleable.PagerSlidingTabStrip_pstSelectedTextColor,
+                selectedTabTextColor);
         // 获取指示器高度
         indicatorHeight = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsIndicatorHeight, indicatorHeight);
         // 获取底部/顶部线高度
@@ -447,7 +455,6 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         final int height = getHeight();
 
         // draw indicator line
-
         rectPaint.setColor(indicatorColor);
 
         // default: line below current tab
@@ -470,16 +477,14 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         canvas.drawRect(lineLeft, height - indicatorHeight, lineRight, height, rectPaint);
 
         // draw underline
-
         rectPaint.setColor(underlineColor);
         // 画底部/顶部线的位置，画在底部
         // 底部
-		/*
-		 * canvas.drawRect(0, height - underlineHeight,
+        /*
+         * canvas.drawRect(0, height - underlineHeight,
 		 * tabsContainer.getWidth(), height, rectPaint);
 		 */
         // 顶部
-
         canvas.drawRect(0, 0, tabsContainer.getWidth(), underlineHeight,
                 rectPaint);
 
@@ -522,6 +527,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
         @Override
         public void onPageSelected(int position) {
+            selectedPosition = position;
+            updateTabStyles();
             if (delegatePageListener != null) {
                 delegatePageListener.onPageSelected(position);
             }
@@ -775,6 +782,20 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
      */
     public int getTextColor() {
         return tabTextColor;
+    }
+
+    public void setSelectedTextColor(int textColor) {
+        this.selectedTabTextColor = textColor;
+        updateTabStyles();
+    }
+
+    public void setSelectedTextColorResource(int resId) {
+        this.selectedTabTextColor = getResources().getColor(resId);
+        updateTabStyles();
+    }
+
+    public int getSelectedTextColor() {
+        return selectedTabTextColor;
     }
 
     /**

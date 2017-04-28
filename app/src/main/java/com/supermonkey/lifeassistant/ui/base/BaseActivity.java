@@ -1,8 +1,8 @@
 package com.supermonkey.lifeassistant.ui.base;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -23,7 +23,7 @@ import de.greenrobot.event.EventBus;
  * @date 创建时间：2017/4/20
  * @Description <基础activity>
  */
-public abstract class BaseActivity extends Activity implements CreateInit, PublishActivityCallBack, PresentationLayerFunc, IMvpView, OnClickListener {
+public abstract class BaseActivity extends AppCompatActivity implements CreateInit, PublishActivityCallBack, PresentationLayerFunc, IMvpView, OnClickListener {
 
     private PresentationLayerFuncHelper presentationLayerFuncHelper;
 
@@ -36,9 +36,9 @@ public abstract class BaseActivity extends Activity implements CreateInit, Publi
         super.onCreate(savedInstanceState);
         presentationLayerFuncHelper = new PresentationLayerFuncHelper(this);
 
-        setHeader();
         initData();
         initViews();
+        setHeader();
         initListeners();
         EBApplication.ebApplication.addActivity(this);
         EventBus.getDefault().register(this);
